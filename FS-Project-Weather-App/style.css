@@ -1,0 +1,86 @@
+html {
+  background-image: url(./assets/3323905.jpg);
+  min-height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.app {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(110, 100, 100, 0.25);
+  box-shadow: 0 8px 32px 0.3;
+  backdrop-filter: blur(3px);
+  padding: 20px 20px;
+  border-radius: 20px;
+}
+
+.search input {
+  text-align: center;
+  border-radius: 30px;
+  width: 260px;
+  height: 40px;
+  margin-left: auto;
+  background-color: rgba(255, 255, 255, 0.356);
+
+  font-family: "Brandon Text", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 16px;
+}
+
+#custom-search {
+  width: 10px;
+  border-radius: 30px;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.356);
+  
+}
+
+.weatherIcon,
+.name,
+.temp {
+  text-align: center;
+}
+
+.name {
+  font-size: 50px;
+  font-family: Garamond;
+  margin-top: -30px;
+}
+
+.temp {
+  font-size: 40px;
+  font-family: Lucida Bright;
+}
+
+.humidity,
+.wind,
+.clouds {
+  font-size: 21px;
+  font-family: Copperplate Gothic;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 703px) {
+  .search input {
+    width: 64%;
+  }
+}
+
+@media screen and (max-width: 368px) {
+  .app {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 206px) {
+  .app {
+    width: 100%;
+  }
+}
+
+
